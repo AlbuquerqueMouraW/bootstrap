@@ -8,12 +8,22 @@
 <!-- Link para pegar o estilo CSS dos servidores do bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+<style>
+.tm-social {
+  width: 50px;
+  height: 50px;
+
+}
+
+</style>
+
+
     <title>Blog - Rage Against The Machine</title>
   </head>
   <body>
 <!-- Menu.navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">blogMusical</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">blogMusical.</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,23 +31,31 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+              <a class="nav-link" href="#">Início <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
             </li>
               <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Noticias
+                Bandas
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Cultura</a>
-                <a class="dropdown-item" href="#">Nacional</a>
-                <a class="dropdown-item" href="#">Internacional</a>
+                
+                <a class="dropdown-item" href="#">Nacionais</a>
+                <a class="dropdown-item" href="#">Internacionais</a>
               </div>
             </li>
-            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Podcast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+
+          
+            <button class="btn btn-outline-Light my-2 my-sm-0" type="submit">Login</button>
           </form>
         </div>
       </nav>
@@ -49,12 +67,23 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="../bootstrap I/assets/img/ratm10.jpg" alt="Primeiro Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class = "text-justify">Músicas de Protesto com Rage Against The Machine</h2>
+            </div>
           </div>
+
           <div class="carousel-item">
             <img class="d-block w-100" src="../bootstrap I/assets/img/ratm11.jpg" alt="Segundo Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class = "text-justify">Músicas de Protesto com Rage Against The Machine</h2>
+            </div>
           </div>
+
           <div class="carousel-item">
             <img class="d-block w-100" src="../bootstrap I/assets/img/ratm12.jpg" alt="Terceiro Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class = "text-justify">Músicas de Protesto com Rage Against The Machine</h2>
+            </div>
           </div>        
         </div>
       </div>
@@ -63,49 +92,30 @@
 <!--Jumbotron.divirTela-->
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+          <h1 class="display-4">blogMusical.</h1>
+        
+          <p class="lead">Este blog é voltado para a cena musical undergroud tanto nacional quanto internacional.</p>
+          <p class="lead"> Cadastre-se e receba noticias e informações do mundo da musica semanalmente.</p>
+          <p class ="lead"> Para se cadastrar click no botão. </p>
+
+          <!--Botão que leva a pag de cadastro-->
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Cadastrar-se</button>
+
+          <!--/Botão que leva a pag de cadastro-->
         </div>
       </div>
 <!--/Jumbotron.divirTela-->
 
-<!-- Cards.Decks-->
-      <div class = "container">
-      <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-          </div>
-        </div>
-      </div>
-    
+
 
 <!--Texto.Video-->
+<div class = "container">
     <div class ="row mt-5 mb-5">
         <div class = "col-md-6">
-            <h3>A banda</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis atque nam assumenda, quo deserunt accusantium, fugiat placeat necessitatibus ex id quidem distinctio blanditiis non vitae modi rerum totam temporibus excepturi.
+            <h3>Protesto sonoro</h3>
+            <p>Lançado em 1992, Rage Against The Machine foi o primeiro álbum da banda norte-americana que serviu de passaporte para o reconhecimento do grupo a nível mundial. Distinto por ser um álbum homónimo, destacou-se como o projeto musical que definiu, desde logo, a forte identidade do grupo. 
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente cum nihil optio aperiam enim eaque doloremque officiis dolorem vitae, qui autem quod, tempora porro iusto minima accusantium debitis vel?
+            <p>Reconhecíveis pela agressividade sonora com que tocam e pelo violento teor lírico com que cantam, Rage Against The Machine canalizam toda uma mensagem imponente dirigida ao Estado americano. Críticas à sociedade capitalista e à política são as principais temáticas que levaram a banda a orientar-se para as letras das suas músicas tornando-se, estas, um autêntico protesto ofensivo ao sistema, algo que o nome da banda deixa bem claro.
             </p>
         </div>
 
@@ -115,25 +125,142 @@
 
         </div>
     </div>
+<!--/Texto.video-->
+
+<!--imagem.texto-->
+<div class ="row mt-5 mb-5">
+  <div class = "col-md-5">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://direct.rhapsody.com/imageserver/images/Art.1043/356x237.jpg" allowfullscreen></iframe>
+    </div>
+    </div>
+
+    <div class = "col-md-7">
+      <h3>A banda</h3>
+      <p>Rage Against the Machine é uma banda de rock com origem em Los Angeles, Califórnia. Formado em 1991, o grupo consiste no rapper e vocalista Zack de la Rocha, no baixista e vocalista de apoio Tim Commerford, no guitarrista Tom Morello, e no baterista Brad Wilk. 
+      </p>
+      <p>Inicialmente, a instrumentação foi inspirada no heavy metal, bem como em outros grupos de "hip-hop" como Afrika Bambaataa, Public Enemy, The Beastie Boys, e na banda holandesa Urban Dance Squad. Rage Against the Machine é também conhecida pelas visões políticas revolucionárias de esquerda de seus membros, que foram expressadas em muitas músicas. Até o ano de 2010, eles haviam vendido cerca de 16 milhões de discos pelo mundo.
+      </p>
+  </div>
+
 </div>
 
-<!--Rodapé-->
-<footer>
-    <div class= "container">
-        <a href="" target="_blank">
+<!--/imagem.texto-->
 
-        </a>
-
-        <a href="" target="_blank">
-            
-        </a>
-
-        <a href="" target="_blank">
-            
-        </a>
-
+<!-- Cards.Decks-->
+      
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="../bootstrap I/assets/img/zachdelarocha1.jpg" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">Sobre: Zack de La Rocha</h5>
+      <p class="card-text">Zacarias Manuel de la Rocha, mais conhecido pelo seu nome artístico Zack de La Rocha é um rapper, cantor, poeta, e ativista norte-americano de origens mexicanas. É mais conhecido por ser vocalista e letrista da banda de rap metal Rage Against the Machine, que hoje segue com seu grupo One Day as Lion.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
     </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="../bootstrap I/assets/img/tom-morello1.jpg" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">Sobre: Tom Morello</h5>
+      <p class="card-text">Thomas Baptist Morello é um guitarrista e compositor estadunidense nascido em 30 de maio de 1964 em Harlem, Nova Iorque, conhecido por seu trabalho na banda de metal Rage Against the Machine e também na extinta Audioslave, mas também trabalhou em carreira solo e outros projetos.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="../bootstrap I/assets/img/tim1.jpg" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">Sobre: Tim Commerford</h5>
+      <p class="card-text">Tim Commerford é um baixista que tocou na banda Rage Against the Machine com Zack de la Rocha e no Audioslave, no qual era também o vocal de apoio de ambas. Atualmente é o baixista do supergrupo Prophets of Rage. Na sua família, ele é o mais jovem das 5 crianças.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /Cards.Decks-->
+
+<!--Jumbotron.divirTela2-->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+      
+    <p class="lead">Gostou do conteúdo?</p>
+    <p class="lead">Tem alguma crítica, elogio ou correção?</p>
+    <p class ="lead"> Então... Entre em contato conosco preenchendo o formulário abaixo ;) </p>
+    
+  </div>
+</div>
+<!--/Jumbotron.divirTela2-->
+
+
+<!--formulario de contato-->
+<div class = "container">
+<div class="row mb-5">
+  <div class="col-md-12">
+    <h4 class="text-center">mande uma mensagem</h4>
+  </div>
+</div>
+
+<div class="row d-flex align-items-center">
+  <div class="col-md-6">
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Nome</label>
+        <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="Nome completo">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">E-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Texto</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div class="form-group d-flex justify-content-end">
+        <button class="btn btn-outline-dark">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-md-6">
+    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</div>
+</div>
+<!--/formulário de contato-->
+
+<!--footer-->
+<hr>
+<hr>
+<footer>
+
+  <div class="row mb-3">
+      <div class="col-md-12 d-flex justify-content-center">
+
+              <a href="https://www.linkedin.com" target="_blank" class="p-3">
+                  <img class="tm-social" src="../bootstrap I/assets/img/254394.png" alt="Logo do Linkedin">
+              </a>
+              
+              <a href="https://www.instagram.com" target="_blank" class="p-3">
+                  <img class="tm-social" src="../bootstrap I/assets/img/254393.png" alt="Logo do Instagram">
+              </a>
+
+              <a href="https://www.youtube.com" target="_blank" class="p-3">
+                  <img class="tm-social" src="../bootstrap I/assets/img/254412.png" alt="Logo do Youtube">
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-12">
+          <p class="text-center">Todos os direitos reservados: Washington Albuquerque de Moura &copy;</p>
+      </div>
+  </div>
+ 
 </footer>
+<!--/footer-->
 
     <!-- Scriptis necessarios para ultilização dos códigos JS do bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
